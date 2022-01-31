@@ -8,9 +8,10 @@ menor = 10000000000000000
 '''                   # Back-end programa                    '''
 print('-=-' * 15)
 for cont in range(0, 5):
-    valores.append(int(input(' ' * 13 + 'Informe um valor: ')))
+    valores.append(int(input(' ' * 13 + f'|Posição| {cont} |Informe um valor: ')))
     cont +=1
-for v in valores:
+for c, v in enumerate(valores):
+    print(c, v)
     if v >= maior:
         maior = v
     if v <= menor:
@@ -19,6 +20,6 @@ for v in valores:
 print('-=-' * 15)
 print('  ' * 8 + '*-* MENU *-*')
 print(f'Os valores digitados foram: {valores}')
-print(f'O maior valor digitado foi: [{maior}]')
-print(f'O menor valor digitado foi: [{menor}]')
+print(f'O maior valor digitado foi: [{maior}] na posição {c}')
+print(f'O menor valor digitado foi: [{menor}] na posição {c}')
 print('-=-' * 15)

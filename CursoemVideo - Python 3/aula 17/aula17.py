@@ -58,7 +58,7 @@ for c, v in enumerate(valores):
 ambas vão sofrer a alteração.'''
 a = [2, 3, 4, 7]
 '''#Para criar uma cópia...'''
-b = a[:]
+'''b = a[:]
 b[2] = 8
 print(f'Lista A: {a}')
-print(f'Lista B: {b}')
+print(f'Lista B: {b}')'''
