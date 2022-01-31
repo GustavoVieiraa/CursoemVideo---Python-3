@@ -3,5 +3,8 @@
 palavras = ('aprender', 'programar', 'linguagem', 'python', 'curso', 'gratis',
             'estudar', 'praticar', 'trabalhar', 'mercado', 'programador', 'futuro')
 for dicionario in palavras:
-    print(f'Na palavra {dicionario.upper()} temos' )
-   
+    print(f'\nNa palavra {dicionario.upper()} temos ', end='')
+    for letra in dicionario:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' ')
+            
