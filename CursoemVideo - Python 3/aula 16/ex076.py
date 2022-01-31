@@ -5,29 +5,10 @@ print('--' * 25)
 print(f'{title:^52}')
 print('--' * 25)
 lista = ('Monitor', 1000, 'Mouse Razer', 250, 'Teclado Razer', 500, 'Gabinete Nox', 300, 'Celular A50', 1200,
-'SSD Kingston', 200)
-for cont in lista[0:1]:
-    print(f'{cont}', end='............................R$   ')
-for cont in lista[1:2]:
-    print(f'{cont:.2f}')
-for cont in lista[2:3]:
-    print(f'{cont}', end='........................R$   ')
-for cont in lista[3:4]:
-    print(f'{cont:.2f}')
-for cont in lista[4:5]:
-    print(f'{cont}', end='......................R$   ')
-for cont in lista[5:6]:
-    print(f'{cont:.2f}')
-for cont in lista[6:7]:
-    print(f'{cont}', end='.......................R$   ')
-for cont in lista[7:8]:
-    print(f'{cont:.2f}')
-for cont in lista[8:9]:
-    print(f'{cont}', end='........................R$   ')
-for cont in lista[9:10]:
-    print(f'{cont:.2f}')
-for cont in lista[10:11]:
-    print(f'{cont}', end='.......................R$   ')
-for cont in lista[11:12]:
-    print(f'{cont:.2f}')
+'SSD Kingston', 200, 'Fonte 450W', 150, 'Fone Redmi', 100, 'Memoria DDR4 8GB', 250)
+for pos in range(0, len(lista)):
+    if pos % 2 == 0:
+        print(f'{lista[pos]:.<30} R$', end='  ')
+    if pos % 2 == 1:
+        print(f'{lista[pos]:.2f}')
 print('--' * 25)
