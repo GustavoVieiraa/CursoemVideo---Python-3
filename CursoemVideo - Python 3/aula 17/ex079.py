@@ -4,11 +4,12 @@
 '''                         VARIAVEIS GLOBAIS                      '''
 print('=-=' * 15)
 val_num = []
-cont = 0
 while True:
     n = int(input(' ' * 13 + 'Informe um valor: '))
     if n not in val_num:
-        print('Valor adicionado com sucesso...')
+        print(' ' * 8 + '~~' * 15)
+        print(' ' * 8 + 'Valor adicionado com sucesso...')
+        print(' ' * 8 + '~~' * 15)
         val_num.append(n)
     else:
         print('Esse número já está em nossa base de dados, tente outro.')
@@ -16,11 +17,12 @@ while True:
     '''                  VALIDAÇÃO DE STRING [S/N]                 '''
     resp = ' '
     while resp not in 'SsNn':
-        resp = str(input('Quer continuar? [S/N] ')).strip().upper()
+        resp = str(input(' ' * 11 + 'Quer continuar? [S/N] ')).strip().upper()
     if resp == 'S':
         print('=-=' * 15)
-    else:
+    elif resp == 'N':
         break
-print('Fim programa...')
+print('=-=' * 15)
 val_num.sort()
-print(f'Os valores digitados foram: {val_num}')
+print(' ' * 7 + f'Os valores digitados foram: {val_num}')
+print('=-=' * 15)
