@@ -4,7 +4,7 @@
 '''#Para adicionar um item em uma lista temos o comando .append()
 #ex. lanche.append('biscoito')
 
-#Para adicionar um item em qualquer lugar da lista, basta utilizar o comando .insert(nº da lista, 'e o desejado')
+#Para adicionar um item em qualquer lugar da lista, basta utilizar o comando .insert(nº do indice na lista, 'e o desejado')
 #ex. lanche.insert(0, 'cachorro-quente')
 
 #Para apagar um elemento de uma lista temos os comandos del, pop, remove
